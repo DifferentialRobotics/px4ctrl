@@ -12,7 +12,7 @@ low_voltage: 21.0 # 6S battery
 
 rc_reverse: # *
     roll: false
-    pitch: false
+    pitch: true
     yaw: false
     throttle: true
 
@@ -36,12 +36,12 @@ thrust_model: # The model that maps thrust signal u(0~1) to real thrust force F(
 
 gain: 
     # Cascade PID controller. Recommend to read the code.
-    Kp0: 2.5
-    Kp1: 2.5
-    Kp2: 2.5
-    Kv0: 3.0
-    Kv1: 3.0
-    Kv2: 3.0
+    Kp0: 4.0
+    Kp1: 4.0
+    Kp2: 4.0
+    Kv0: 3.5
+    Kv1: 3.5
+    Kv2: 3.5
     # ↓↓↓ No use now --
     Kvi0: 0.0
     Kvi1: 0.0
