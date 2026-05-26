@@ -9,7 +9,7 @@
 本项目基于ROS1开发，请根据所使用ubuntu版本安装对应版本ROS1，支持ubuntu16.04, 18.04和20.04。
 
 ## 项目拉取
-- `px4ctrl` 模块依赖 `Utils` 和 `mavros` 模块运行，所以需要将 `Utils` 模块一并拉下（`mavros` 模块存放于飞机`/opt/ros/noetic/share/mavros` 目录下）
+- `px4ctrl` 模块依赖 `Utils` 模块编译，所以需要将 `Utils` 模块一并拉下
 
 ```bash
 # 拉取 px4ctrl 模块
@@ -23,6 +23,10 @@ catkin_make
 ```
 
 ## 程序运行
+- `px4ctrl` 模块依赖 `mavros, Faster-lio` 模块运行
+    - `mavros` 模块存放于飞机`/opt/ros/noetic/share/mavros` 目录下
+    - `Faster-lio` 链接：https://github.com/DifferentialRobotics/faster-lio.git
+
 ```bash
 # 运行 px4ctrl 模块
 cd px4ctrl_ws
