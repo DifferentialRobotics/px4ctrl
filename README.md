@@ -24,7 +24,7 @@ catkin_make
 
 ## 程序运行
 - `px4ctrl` 模块依赖 `mavros, Faster-lio` 模块运行
-    - `mavros` 模块存放于飞机`/opt/ros/noetic/share/mavros` 目录下
+    - `mavros` 模块默认安装于飞机`/opt/ros/noetic/share/mavros` 目录下
     - `Faster-lio` 链接：https://github.com/DifferentialRobotics/faster-lio.git
 
 ```bash
