@@ -9,14 +9,14 @@
 本项目基于ROS1开发，请根据所使用ubuntu版本安装对应版本ROS1，支持ubuntu16.04, 18.04和20.04。
 
 ## 项目拉取
-- `px4ctrl` 模块依赖 `Utils` 模块编译，所以需要将 `Utils` 模块一并拉下
+- `px4ctrl` 模块依赖 `utils` 模块编译，所以需要将 `utils` 模块一并拉下
 
 ```bash
 # 拉取 px4ctrl 模块
 mkdir -p px4ctrl_ws/src
 cd px4ctrl_ws/src
 git clone https://github.com/DifferentialRobotics/px4ctrl.git  # 拉取 px4ctrl 模块
-git clone https://github.com/DifferentialRobotics/Utils.git  # 拉取 Utils 模块
+git clone https://github.com/DifferentialRobotics/utils.git  # 拉取 Utils 模块
 
 cd ..
 catkin_make
